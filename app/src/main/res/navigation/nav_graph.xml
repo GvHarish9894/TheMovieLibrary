@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviesFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.techgv.themovielibrary.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.techgv.themovielibrary.ui.onboard.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.techgv.themovielibrary.ui.splash.SplashScreenFragment"
+        android:label="SplashScreenFragment"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.techgv.themovielibrary.ui.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/action_moviesFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_categoryDetailsFragment"
+            app:destination="@id/categoryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvShowsFragment"
+        android:name="com.techgv.themovielibrary.ui.TvShowsFragment"
+        android:label="fragment_tv_shows"
+        tools:layout="@layout/fragment_tv_shows" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.techgv.themovielibrary.ui.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.techgv.themovielibrary.ui.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/booksMarksFragment"
+        android:name="com.techgv.themovielibrary.ui.BooksMarksFragment"
+        android:label="fragment_books_marks"
+        tools:layout="@layout/fragment_books_marks" />
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.techgv.themovielibrary.ui.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_videoClipsFragment2"
+            app:destination="@id/videoClipsFragment" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_postersFragment"
+            app:destination="@id/postersFragment" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_categoryDetailsFragment"
+            app:destination="@id/categoryDetailsFragment" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <argument
+            android:name="movie_id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_castDetailsFragment"
+            app:destination="@id/castDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.techgv.themovielibrary.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryDetailsFragment"
+        android:name="com.techgv.themovielibrary.ui.categorydetail.CategoryDetailsFragment"
+        android:label="fragment_category_details"
+        tools:layout="@layout/fragment_category_details" >
+        <action
+            android:id="@+id/action_categoryDetailsFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="category_key"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoClipsFragment"
+        android:name="com.techgv.themovielibrary.ui.VideoClipsFragment"
+        android:label="fragment_video_clips"
+        tools:layout="@layout/fragment_video_clips" />
+    <fragment
+        android:id="@+id/postersFragment"
+        android:name="com.techgv.themovielibrary.ui.PostersFragment"
+        android:label="fragment_posters"
+        tools:layout="@layout/fragment_posters" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.techgv.themovielibrary.ui.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/castDetailsFragment"
+        android:name="com.techgv.themovielibrary.ui.CastDetailsFragment"
+        android:label="fragment_cast_details"
+        tools:layout="@layout/fragment_cast_details" >
+        <argument
+            android:name="personId"
+            app:argType="long" />
+    </fragment>
+</navigation>

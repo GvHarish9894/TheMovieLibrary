@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370856453209",
+    "project_id": "the-movie-library",
+    "storage_bucket": "the-movie-library.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370856453209:android:6c65c52a423587df4bfd48",
+        "android_client_info": {
+          "package_name": "com.techgv.themovielibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370856453209-opcdttiu35jrimtis0fv0scq7g92e1cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTBAd6WNnL7MQZS_MLt8QoR1SfuvZYX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370856453209-opcdttiu35jrimtis0fv0scq7g92e1cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

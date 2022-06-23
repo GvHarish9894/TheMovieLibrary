@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">The Movie Library</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv Shows</string>
+    <string name="tmdb">TMDB</string>
+    <string name="about">About</string>
+    <string name="github">GitHub</string>
+    <string name="credits_to">Credits To</string>
+    <string name="watch_lists">Watch Lists</string>
+    <string name="home">Home</string>
+    <string name="movie_item">Movie Item</string>
+    <string name="similar_movies">Similar Movies</string>
+
+    <string name="image_w780">https://image.tmdb.org/t/p/w780%s</string>
+    <string name="image_w92">https://image.tmdb.org/t/p/w92%s</string>
+    <string name="image_w185">https://image.tmdb.org/t/p/w185%s</string>
+    <string name="image_w342">https://image.tmdb.org/t/p/w342%s</string>
+    <string name="image_w500">https://image.tmdb.org/t/p/w500%s</string>
+    <string name="original">https://image.tmdb.org/t/p/original%s</string>
+    <string name="image_w45">https://image.tmdb.org/t/p/w45%s</string>
+    <string name="image_w632">https://image.tmdb.org/t/p/w632%s</string>
+    <string name="image_w1280">https://image.tmdb.org/t/p/w1280%s</string>
+
+    <!--Social Media -->
+    <string name="instagram">https://www.instagram.com/%s</string>
+    <string name="twitter">https://twitter.com/%1s</string>
+    <string name="facebook">https://www.facebook.com/%s</string>
+
+</resources>
