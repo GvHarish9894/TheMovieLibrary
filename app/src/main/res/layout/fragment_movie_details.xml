@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/test_back_drop"
+            tools:src="@drawable/test_back_drop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
             android:layout_height="170dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="112dp"
-            android:src="@drawable/test_movie_image"
+            tools:src="@drawable/test_movie_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +39,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:includeFontPadding="false"
-            android:text="Morbius"
+            tools:text="Morbius"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -53,7 +53,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:text="A new Marvel legend arrives."
+            tools:text="A new Marvel legend arrives."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.105"
             app:layout_constraintStart_toEndOf="@+id/moviePosterIv"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
-            android:text="2022-03-30"
+            tools:text="2022-03-30"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/moviePosterIv"
@@ -77,14 +77,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
-            android:drawableStart="@drawable/ic_star"
             android:drawablePadding="4dp"
             android:gravity="center_vertical"
-            android:text="6.4"
+            tools:text="6.4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/moviePosterIv"
-            app:layout_constraintTop_toBottomOf="@+id/releaseDateTv" />
+            app:layout_constraintTop_toBottomOf="@+id/releaseDateTv"
+            app:drawableStartCompat="@drawable/ic_star" />
 
         <TextView
             android:id="@+id/biographyTv"
@@ -95,7 +95,7 @@
             android:ellipsize="end"
             android:ems="30"
             android:maxLines="3"
-            android:text="Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease."
+            tools:text="Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/moviePosterIv" />
@@ -130,7 +130,7 @@
                 style="@style/TextAppearance.Medium.14sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cast"
+                android:text="@string/cast"
                 app:drawableEndCompat="@drawable/ic_right"
                 android:textColor="@color/black" />
 
@@ -161,7 +161,7 @@
                 style="@style/TextAppearance.Medium.14sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Video Clips"
+                android:text="@string/video_clips"
                 app:drawableEndCompat="@drawable/ic_right"
                 android:textColor="@color/black" />
 
@@ -194,7 +194,7 @@
                 style="@style/TextAppearance.Medium.14sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Posters"
+                android:text="@string/posters"
                 android:textColor="@color/black"
                 app:drawableEndCompat="@drawable/ic_right" />
 
@@ -227,7 +227,7 @@
                 style="@style/TextAppearance.Medium.14sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Recommendations"
+                android:text="@string/recommendations"
                 android:textColor="@color/black"
                 app:drawableEndCompat="@drawable/ic_right" />
 
@@ -259,7 +259,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:drawableEndCompat="@drawable/ic_right"
-                android:text="Similar Movies"
+                android:text="@string/similar_movies"
                 android:textColor="@color/black" />
 
             <androidx.recyclerview.widget.RecyclerView

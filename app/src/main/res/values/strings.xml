@@ -38,5 +38,9 @@
     <string name="instagram">https://www.instagram.com/%s</string>
     <string name="twitter">https://twitter.com/%1s</string>
     <string name="facebook">https://www.facebook.com/%s</string>
+    <string name="posters">Posters</string>
+    <string name="cast">Cast</string>
+    <string name="video_clips">Video Clips</string>
+    <string name="recommendations">Recommendations</string>
 
 </resources>

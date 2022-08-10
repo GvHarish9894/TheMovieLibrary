@@ -7,9 +7,11 @@ plugins {
     id 'androidx.navigation.safeargs'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-kapt'
+
 }
 
 android {
+
     compileSdk 32
 
     defaultConfig {
@@ -22,12 +24,29 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "GvHarish9894@"
+            keyAlias "app"
+            keyPassword "GvHarish9894@"
+        }
+        debug {
+            storeFile file("keystore.jks")
+            storePassword "GvHarish9894@"
+            keyAlias "app"
+            keyPassword "GvHarish9894@"
+        }
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/3/\""
             buildConfigField "String", "API_KEY", "\"27f0724ff73a844d57ac9dc6f4b9c0dd\""
+            signingConfig signingConfigs.release
         }
 
         debug{
@@ -52,17 +71,18 @@ android {
 
 dependencies {
 
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //Lifecycle-aware components
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.1"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1"
 
     //Network
     implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.8"
@@ -82,8 +102,9 @@ dependencies {
     kapt "androidx.room:room-compiler:2.4.2"
 
     //FireBase Service
-    implementation platform('com.google.firebase:firebase-bom:29.3.1')
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
 
     //lottie-android
@@ -100,7 +121,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.13.2'
 
     //https://github.com/PierfrancescoSoffritti/android-youtube-player
-    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
