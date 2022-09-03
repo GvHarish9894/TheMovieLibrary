@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.techgv.themovielibrary.data.remote.response.Movies
 import com.techgv.themovielibrary.databinding.FragmentCategoryDetailsBinding
 import com.techgv.themovielibrary.ui.CategoryDetailsAdapter
-import com.techgv.themovielibrary.ui.MainActivity
-import com.techgv.themovielibrary.ui.home.MovieViewModel
+import com.techgv.themovielibrary.ui.activity.MainActivity
+import com.techgv.themovielibrary.ui.fragment.home.MovieViewModel
 
 
 class CategoryDetailsFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.techgv.themovielibrary.ui.home
+package com.techgv.themovielibrary.ui.fragment.home
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -27,6 +27,7 @@ class MovieViewModel @Inject constructor(private val repository: Repository) : V
     val castDetailsLivedata = MutableLiveData<CastDetailsResponse>()
     val externalIdsLivedata = MutableLiveData<ExternalIdsResponse>()
     val moviesCreditsLivedata = MutableLiveData<MovieCreditsResponse>()
+
 
     fun popularMovies(page: Int = 1) {
         viewModelScope.launch {

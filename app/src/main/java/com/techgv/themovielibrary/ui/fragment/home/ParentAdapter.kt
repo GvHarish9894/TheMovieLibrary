@@ -1,4 +1,4 @@
-package com.techgv.themovielibrary.ui.home
+package com.techgv.themovielibrary.ui.fragment.home
 
 import android.content.Context
 import android.view.LayoutInflater

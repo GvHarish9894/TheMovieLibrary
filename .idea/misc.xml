@@ -7,9 +7,10 @@
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2465" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/drawable/ic_tmdb_icon.xml" value="0.2465" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/cast_item.xml" value="0.25" />
+        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/cast_item.xml" value="0.72" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/cast_item_with_role.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/category_item.xml" value="0.25" />
+        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/category_item_placeholder.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/content_main.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/custom_tool_bar.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_about.xml" value="0.25" />
@@ -18,7 +19,8 @@
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_category_details.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_login.xml" value="0.25" />
-        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_movie_details.xml" value="0.25" />
+        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_movie_details.xml" value="0.264" />
+        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_movie_details_placeholder.xml" value="0.2" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_movies.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_on_boarding.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_posters.xml" value="0.25" />
@@ -29,16 +31,18 @@
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/fragment_web_view.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/movie_item.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/movie_item_category.xml" value="0.25" />
+        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/movie_item_placeholder.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/parent_recycler_view_item.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/video_clip_item.xml" value="0.25" />
+        <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/layout/video_clip_item_placeholder.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/menu/menu_main.xml" value="0.25" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
         <entry key="..\:/Users/harih/StudioProjects/TheMovieLibrary/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2465" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

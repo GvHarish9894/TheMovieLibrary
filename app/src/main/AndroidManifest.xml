@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheMovieLibrary">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.TheMovieLibrary.NoActionBar">
             <intent-filter>

@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.techgv.themovielibrary.R
 import com.techgv.themovielibrary.data.remote.response.Cast
 
@@ -34,6 +35,7 @@ class CastAdapter(var list: List<Cast>, var context: Context) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(context)
             .load(context.getString(R.string.original, list[position].profile_path))
+            .apply(RequestOptions().override(0, 120))
             .into(holder.image)
         holder.name.text = list[position].name
 

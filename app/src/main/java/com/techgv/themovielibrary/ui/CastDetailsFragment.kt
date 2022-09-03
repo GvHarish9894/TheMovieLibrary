@@ -19,8 +19,8 @@ import com.techgv.themovielibrary.data.remote.response.CastDetailsResponse
 import com.techgv.themovielibrary.data.remote.response.ExternalIdsResponse
 import com.techgv.themovielibrary.data.remote.response.Movies
 import com.techgv.themovielibrary.databinding.FragmentCastDetailsBinding
-import com.techgv.themovielibrary.ui.home.ChildAdapter
-import com.techgv.themovielibrary.ui.home.MovieViewModel
+import com.techgv.themovielibrary.ui.fragment.home.ChildAdapter
+import com.techgv.themovielibrary.ui.fragment.home.MovieViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -78,7 +78,7 @@ class CastDetailsFragment : Fragment() {
         adapter.onChildClick = {
             findNavController().navigate(
                 R.id.movieDetailsFragment,
-                bundleOf("movieId" to movieCredit[it].id)
+                bundleOf("movie_id" to movieCredit[it].id.toLong())
             )
         }
 
@@ -131,7 +131,7 @@ class CastDetailsFragment : Fragment() {
 
     }
 
-    fun passIntent(uri: String) {
+    private fun passIntent(uri: String) {
         startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(uri)))
     }
 

@@ -2,8 +2,8 @@
 <com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
+    android:id="@+id/genresItem"
     android:layout_height="wrap_content"
+    android:clickable="false"
     android:layout_marginHorizontal="4dp"
-    tools:text="Action">
-
-</com.google.android.material.chip.Chip>
+    tools:text="Action"/>
